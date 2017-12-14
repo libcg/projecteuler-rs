@@ -5,16 +5,9 @@ fn main() {
         let cc = c * c;
 
         for b in 1..c {
-            let bc = b + c;
-            let bb = b * b;
-
-            if bc > sum || bb > cc {
-                break;
-            }
-
             for a in 0..b {
-                let abc = a + bc;
-                let aabb = a * a + bb;
+                let abc = a + b + c;
+                let aabb = a * a + b * b;
 
                 if abc > sum || aabb > cc {
                     break;
